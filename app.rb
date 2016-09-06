@@ -23,7 +23,7 @@ class PlacePoodle < Sinatra::Base
     res = (x / y).to_f;
 
     closestItem = 0;
-    closestDist = 1000;
+    closestDist = 1000.0;
 
     poodles.each_with_index { |poodle, index|
         dist = (res - poodle.ratio).abs
